@@ -878,3 +878,12 @@ footer .under-footer a {
 footer .under-footer a:hover {
   color: #c66;
 }
+
+.w-100 {
+  width: 60px;
+  height: auto;
+}
+
+.pa-0 {
+  padding-left: 0px !important;
+}

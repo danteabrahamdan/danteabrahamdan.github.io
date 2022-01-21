@@ -1,6 +1,6 @@
 // Pre loader
 $(window).load(function(){
-	$('.preloader').fadeOut(1200);    
+	$('.preloader').fadeOut(800);    
 });
 
 $(document).ready(function() {
@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	// Smoothscroll js
 	$(function() {
-		$('.navbar-default a').bind('click', function(event) {
+		$('.navbar-default-b a').bind('click', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top - 49
