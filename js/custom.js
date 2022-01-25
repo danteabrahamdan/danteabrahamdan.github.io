@@ -35,8 +35,8 @@ $(document).ready(function() {
   });
 
 	// Carrousel
-  $(document).ready(function() {
-		$("#team-carousel").owlCarousel({
+  /* $(document).ready(function() { */
+		$(".owl-carousel").owlCarousel({
 			items : 3,
 			itemsDesktop : [1199,3],
 			itemsDesktopSmall : [979,3],
@@ -45,8 +45,12 @@ $(document).ready(function() {
 			itemsTablet: [768,1],
 			itemsTabletSmall: [985,2],
 			itemsMobile : [479,1],
+			autoPlay: true,
+			stopOnHover: true,
+			navigation: true,
+			navigationText: ["<i class='fa fa-angle-left' style='color: #7e4e6e;'></i>", "<i class='fa fa-angle-right' style='color: #7e4e6e;'></i>"]
 		});
-	});
+	/* }); */
     
 	// Volver arriba
 	$(window).scroll(function() {
