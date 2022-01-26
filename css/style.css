@@ -1062,15 +1062,6 @@ a, a:hover {
     padding: 2rem 3.5rem;
   }
 
-  /* .postcard__text:before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: -20%;
-    height: 130%;
-    width: 55px;
-  } */
-
   .postcard.light .postcard__text:before {
     background: #e1e5ea;
   }
@@ -1188,5 +1179,9 @@ a, a:hover {
   footer h4 {
     margin-top: 20px;
     margin-bottom: 10px;
-  } 
+  }
+
+  .preg-c {
+    text-align: center;
+  }
 }
