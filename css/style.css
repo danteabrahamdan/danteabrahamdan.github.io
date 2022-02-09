@@ -1053,3 +1053,8 @@ a, a:hover {
 .img-mobile-image {
   display: none;
 }
+
+.text-dark-c {
+  color: #18151f;
+  text-align: center;
+}
