@@ -1055,6 +1055,6 @@ a, a:hover {
 }
 
 .text-dark-c {
-  color: #18151f;
-  text-align: center;
+  color: #18151f !important;
+  text-align: center !important;
 }
