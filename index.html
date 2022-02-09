@@ -9,7 +9,7 @@
   <!-- Estilos CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/animate.min.css"/>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
   <link rel="stylesheet" href="css/component.css"/>
   <link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/owl.theme.css"/>
@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="manifest" href="manifest.json" type="application/manifest+json" />
-	<title>PSST Soporte</title>
+	<title>Soporte PSST</title>
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
@@ -38,7 +38,7 @@
           <span class="icon icon-bar"></span>
           <span class="icon icon-bar"></span>
         </button>
-        <a href="#top" class="navbar-brand smoothScroll"><img src="images/logo-mteps.png" alt="MTEPS" class="logo-navbar"></a>
+        <a href="#top" class="navbar-brand smoothScroll"><img src="images/logo-mteps.png" alt="Logo MTEPS" class="logo-navbar"></a>
       </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -82,7 +82,8 @@
         <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
           <article class="postcard light yellow">
             <a class="postcard__img_link" href="javascript:void(0);">
-              <img class="postcard__img" src="images/logo-card.jpg" alt="Image Title" />  
+              <img src="images/logo-card.jpg" class="postcard__img img-mobile-image" alt="Logo MTEPS" />
+              <img src="images/logo-h.jpg" class="postcard__img img-r" alt="Logo MTEPS" />
             </a>
             <div class="postcard__text t-dark">
               <h4 class="postcard__title yellow telegram"><a href="#">Documento de preguntas frecuentes</a></h4>
@@ -105,7 +106,8 @@
         <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
           <article class="postcard light yellow">
             <a class="postcard__img_link" href="javascript:void(0);">
-              <img class="postcard__img" src="images/logo-card.jpg" alt="Image Title" />  
+              <img src="images/logo-card.jpg" class="postcard__img img-mobile-image" alt="Logo MTEPS" />
+              <img src="images/logo-h.jpg" class="postcard__img img-r" alt="Logo MTEPS" />
             </a>
             <div class="postcard__text t-dark">
               <h4 class="postcard__title yellow telegram"><a href="#">Manual de usuario para manejo PSST</a></h4>
@@ -461,6 +463,8 @@
                 <div class="postcard__bar whatsapp"></div>
                 <div class="postcard__preview-txt">
                   Puedes interactuar con el Bot de WhatsApp del MTEPS para recibir soporte y respuestas a tus preguntas acerca de la plataforma PSST.
+                  <br><br>
+                  Video de apoyo <a href="https://youtu.be/oroPaVCo7JA" target="_blank" rel="noreferrer" class="whatsapp-b">ir al video</a>
                 </div>
                 <ul class="postcard__tagbox">
                   <a href="https://wa.link/2hcrfi" target="_blank" rel="noreferrer" class="btn whatsapp"><i class="fab fa-whatsapp"></i> Ir a WhatsApp</a>   
@@ -504,12 +508,12 @@
         <div class="col-lg-4">
           <div class="first-item">
             <div class="logo">
-              <img src="images/logo-mteps2.png" alt="mteps" class="w-100">
+              <img src="images/logo-mteps2.png" alt="Logo MTEPS" class="w-100">
             </div>
             <ul class="pa-0">
               <li><a href="javascript:void(0);">Calle Yanacocha esquina Calle Mercado, Zona Central, La Paz - Bolivia</a></li>
               <li><a href="mailto:contacto@mintrabajo.gob.bo?Subject=Contacto%20e%20informacion%20mintrabajo" rel="noreferrer">contacto@mintrabajo.gob.bo</a></li>
-              <li><a href="https://www.mintrabajo.gob.bo" rel="noreferrer" target="_blank">https://www.mintrabajo.gob.bo</a></li>
+              <li><a href="https://www.mintrabajo.gob.bo" rel="noreferrer" target="_blank">Pagina oficial Mintrabajo</a></li>
               <li><a href="javascript:void(0);">(591-2) 2408606</a></li>
             </ul>
           </div>
@@ -546,6 +550,7 @@
 
   <!-- boton flotante ir arriba -->
   <a href="javascript:void(0);" class="go-top"><i class="fa fa-angle-up"></i></a>
+  <!-- Fin boton flotante ir arriba -->
 
   <!-- Inicio Javascript  -->
   <script src="js/jquery.js"></script>
@@ -561,6 +566,7 @@
     if('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
+
     let year = new Date().getFullYear();
     const parr = document.getElementById('year-custom');
     parr.innerHTML = `

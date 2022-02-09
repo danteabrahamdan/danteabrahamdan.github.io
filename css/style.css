@@ -96,8 +96,7 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
-*:before,
-*:after {
+*:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -111,20 +110,15 @@ a:hover, a:active, a:focus {
 }
 
 #docs .section-title {
-  padding-top: 22px;
+  padding-top: 0px !important;
 }
 
-#contactos .section-title {
-  padding-top: 22px;
+#docs .section-title h1, #normativa .section-title h1, #videos .section-title h1, #preguntas .section-title h1, #contactos .section-title h1 {
+  margin-top: 10px !important;
 }
 
-#docs .section-title h1 {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-#docs, #normativa, #videos, #preguntas {
-  padding-top: 50px;
+#docs, #normativa, #videos, #preguntas, #contactos {
+  padding-top: 20px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -168,16 +162,21 @@ a:hover, a:active, a:focus {
   border-radius: 100%;
   margin: 40px auto;
   -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+  animation: sk-pulseScaleOut 1s infinite ease-in-out; 
+}
 
 @-webkit-keyframes sk-pulseScaleOut {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0); }
+    transform: scale(0); 
+  }
+
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
+    transform: scale(1);
+    opacity: 0; 
+  }
+}
 
 @keyframes sk-pulseScaleOut {
   0% {
@@ -273,8 +272,7 @@ a:hover, a:active, a:focus {
     color: #304352 !important;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #777;
     background-color: transparent;
 }
@@ -295,8 +293,7 @@ a:hover, a:active, a:focus {
     border-color: transparent;
   }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { 
   background-color: transparent;
 }
 
@@ -401,7 +398,7 @@ a:hover, a:active, a:focus {
 
 #normativa .team-thumb {
   width: 100%;
-  height: 400px;
+  height: 380px;
   margin: 32px 0;
   text-align: center;
   background: #ffffff;
@@ -635,7 +632,6 @@ footer {
     top: 0;
     left: 0;
   }
-
 }
 
 @media (max-width: 650px) {
@@ -652,10 +648,8 @@ footer {
   }
 
   #docs, #normativa, #videos, #preguntas {
-    padding-top: 40px;
     padding-bottom: 40px;
   }
-
 }
 
 .rounded-img-w {
@@ -680,7 +674,6 @@ footer {
 footer
 --------------------------------------------- */
 footer {
-  /* margin-top: 60px; */
   padding: 60px 0px 30px 0px;
   background-color: #2a2a2a;
 }
@@ -803,21 +796,26 @@ a, a:hover {
   font-weight: 500;
   line-height: 1.2;
 }
+
 .postcard .small {
   font-size: 80%;
 }
+
 .postcard .postcard__title {
   font-size: 1.75rem;
 }
+
 .postcard .postcard__img {
   max-height: 180px;
   width: 100%;
   object-fit: cover;
   position: relative;
 }
+
 .postcard .postcard__img_link {
   display: contents;
 }
+
 .postcard .postcard__bar {
   width: 50px;
   height: 10px;
@@ -883,6 +881,14 @@ a, a:hover {
   .postcard .postcard__tagbox {
     justify-content: start;
   }
+
+  .img-r {
+    display: none !important;
+  }
+  .img-mobile-image {
+    display: block !important;
+  }
+
   .postcard .postcard__img {
     max-width: 300px;
     max-height: 100%;
@@ -994,6 +1000,10 @@ a, a:hover {
   color: #FFF;
 }
 
+.whatsapp-b {
+  color: #1CBEA6 !important;
+}
+
 #contactos h3.email {
   color: #3889CA;
 }
@@ -1038,4 +1048,8 @@ a, a:hover {
   background: #7e4e6e;
   border: 1px #7e4e6e solid !important;
   opacity: 1 !important;
+}
+
+.img-mobile-image {
+  display: none;
 }
